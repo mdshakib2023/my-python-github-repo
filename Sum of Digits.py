@@ -1,9 +1,10 @@
 #Sum of Digits
-num = 608732
-digit = 0
-while num!=0:
-    num //=10
-    print(num)
-    digit+=1
-    print(digit)
-print("sum of digit:",digit)   
+num = int(input("enter your number:"))
+sum = 0
+num = abs(num)
+while num!= 0:
+    digit = num %10
+    sum  += digit
+    num //= 10
+print("sum of digit",sum)
+
